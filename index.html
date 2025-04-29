@@ -8,6 +8,9 @@
 		* { font-family:"標楷體"; margin-left:auto; margin-right:auto;}
 		h1 {color:blue; font-size:60px;}
 		h2 {color:#33ff33; font-size:40px;}
+		.bg-blue {
+		  background-color: #9b9dcf;
+		}
 		.col-lg-4 {border: 1px solid;}
 	</style>
 
@@ -16,18 +19,18 @@
 
 	<script>
 		function change1() {
-  			document.getElementById("pic").src = "2.png";
+  			document.getElementById("pic").src = "6.jpg";
   			document.getElementById("h2text").innerText = "張主臨";
 		}
 
 		function change2() {
-  			document.getElementById("pic").src = "1.png";
+  			document.getElementById("pic").src = "5.jpg";
   			document.getElementById("h2text").innerText = "Zhang-zhulin";
 		}
 	</script>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg bg-light">
+	<nav class="navbar navbar-expand-lg bg-blue">
 		<a class="navbar-brand">MENU</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ITEMS">
 			<span class="navbar-toggler-icon"></span>
@@ -47,13 +50,13 @@
 		</div>
 	</nav>
 
-	<main class="container-fluid bg-info text-white text-center">
-		<img src="2.png" class="img-fluid rounded-circle" width="50%" id="pic" onmouseover="change1()" onmouseout="change2()" alt="profile image"/>
+	<main class="container-fluid bg-blue text-white text-center">
+		<img src="5.jpg" class="img-fluid rounded-circle" width="50%" id="pic" onmouseover="change1()" onmouseout="change2()" alt="profile image"/>
 		<div class="row">
 			<section class="col-lg-4">
 				<h3 id="Julie">個人簡介</h3>
 				<p>
-					<!-- <a href="2.0.html">個人網頁：</a><a href="https://www1.pu.edu.tw/~tcyang">https://www1.pu.edu.tw/~Juliweeee</a><br> -->
+					<!-- #9799c9#9e97c9#9b95cc<a href="2.0.html">個人網頁：</a><a href="https://www1.pu.edu.tw/~tcyang">https://www1.pu.edu.tw/~Juliweeee</a><br> -->
 					姓名：張主臨 
 					<!-- <a href="https://www.facebook.com/tcyang1971" target="_blank" class="text-decoration-none text-white bg-warning">https://www.facebook.com/Juliweeee</a><br> -->
 					系級:資管二B 
