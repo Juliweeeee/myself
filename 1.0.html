@@ -6,18 +6,75 @@
 	<style>
 		/* 設定頁面背景顏色 */
 		body {
-			background-color: #b8edb4;
+			background-color: #a6deac;
 		}
 		/* 讓 main 的內容置中 */
 		main {
 			text-align: center;
 		}
-		/* 確保圖片置中 */
+		/* 圖片新增四角圓弧與邊框，並右移20% */
 		img {
 			display: block;
-			margin: 0 auto;
-			width: 80%; 
-			height: auto;
+			float: left; /* 圖片浮動到左側 */
+			margin-left: 8%; /* 設置左邊距 */
+			width: 34%; 
+			margin-top: 4%;
+			border-radius: 400px; /* 四角圓弧設定 */
+			margin-right: 20px; /* 增加圖片與文字之間的間距 */
+			border: 3px solid #ffffff; /* 圖片邊框 */
+			box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.2); /* 添加陰影效果 */
+		}
+		/* 自我介紹文字框設計 */
+		.introduction {
+			text-align: left;
+			display: inline-block;
+			vertical-align: top; /* 垂直置頂對齊 */
+			width: 40%; /* 文字容器寬度 */
+			margin-top: 11%; /* 向下移動 */
+			padding: 15px; /* 增加文字框內部的間距 */
+			border: 2px solid #ffffff; /* 邊框設計 */
+			border-radius: 10px; /* 邊框四角圓弧 */
+			background-color: #ffffff; /* 背景顏色為白色 */
+			box-shadow: 3px 3px 40px rgba(0, 0, 0, 0.2); /* 添加陰影效果 */
+			font-size: 1.2em; /* 放大文字 */
+			position: relative; /* 確保<h2>可以放在框內 */
+		}
+		/* 調整 <h2> 樣式，移到文字框左上角 */
+		.introduction h2 {
+			margin: 0; /* 移除默認的外距 */
+			padding: 0; /* 移除默認的內距 */
+			font-size: 1.5em; /* 放大標題文字 */
+			color: #000; /* 標題顏色 */
+		}
+		/* 未來規劃文字框設計 */
+		.future-plan {
+			text-align: left;
+			display: inline-block;
+			vertical-align: top; /* 垂直置頂對齊 */
+			width: 40%; /* 文字容器寬度 */
+			margin-top: 19%; /* 向下移動10% */
+			margin-left: 8%; /* 讓框右移，與圖片對齊 */
+			padding: 15px; /* 增加文字框內部的間距 */
+			border: 2px solid #ffffff; /* 邊框設計 */
+			border-radius: 10px; /* 邊框四角圓弧 */
+			background-color: #ffffff; /* 背景顏色為白色 */
+			box-shadow: 3px 3px 40px rgba(0, 0, 0, 0.2); /* 添加陰影效果 */
+			font-size: 1.2em; /* 放大文字 */
+			float: left; /* 浮動到楊咩咩圖的右側 */
+		}
+		/* 未來規劃的 <h2> 樣式 */
+		.future-plan h2 {
+			margin: 0; /* 移除默認的外距 */
+			padding: 0; /* 移除默認的內距 */
+			font-size: 1.5em; /* 放大標題文字 */
+			color: #000; /* 標題顏色 */
+		}
+		/* 楊咩咩圖片樣式，向下移動 */
+		.yangmeme {
+			float: right;
+			margin-right: 7%;
+			margin-left: 0;
+			margin-top: 16%; /* 向下移動10% */
 		}
 	</style>
 </head>
@@ -27,10 +84,21 @@
 	<h3>自傳履歷</h3>
 </header>
 <main>
-	<h2>自我介紹</h2>
-	<img src="7.png" alt="何倫碼測驗結果">
-	<h2>我想從事的職業:通訊工程師</h2>
-	<img src="8.png" alt="職涯測驗結果">
+	<img src="9.jpg" alt="棉花糖">
+	<div class="introduction">
+		<h2>自我介紹</h2>
+		<p>我是張主臨，目前是靜宜大學資管系的大二生。還在摸索自己的興趣和未來的方向，但對新東西都蠻有好奇心，也願意多嘗試、多學習。希望透過不同的經驗慢慢找到自己真正想走的路。</p>
+	</div>
+	
+	<img src="10.jpg" alt="楊咩咩" class="yangmeme">
+	<div class="future-plan">
+		<h2>未來規劃</h2>
+		<p>在未來所剩不多的兩年大學生活中，我希望能善用在校的時間與資源，更深入地認識自己、發掘真正的興趣，並朝著生活與職涯的目標邁進。我也會持續關注產業趨勢與未來發展，釐清自己需要加強的能力，逐步補足在軟實力與硬實力上的不足。同時，我重視心理狀態的穩定與平衡，期許自己能在探索與學習的過程中保持開放的心態，不斷成長、勇敢前行。</p>
+	</div>
 </main>
+
+<!-- 回首頁連結 -->
+<!-- <p><a href="index.html">回首頁</a></p> -->
+
 </body>
 </html>
